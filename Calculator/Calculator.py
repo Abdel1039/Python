@@ -39,7 +39,7 @@ class Calculator():
     def Add(self):
         nb = self.text.split("+")
         self.nb1 = float(nb[0])
-        self.nb2 = float(nb[0])
+        self.nb2 = float(nb[1])
         self.resultat = self.nb1 + self.nb2
         self.entry.set(str(self.resultat))
         self.init()
@@ -47,7 +47,7 @@ class Calculator():
     def Moins(self):
         nb = self.text.split("-")
         self.nb1 = float(nb[0])
-        self.nb2 = float(nb[0])
+        self.nb2 = float(nb[1])
         self.resultat = self.nb1 - self.nb2
         self.entry.set(str(self.resultat))
         self.init()
@@ -55,7 +55,7 @@ class Calculator():
     def Div(self):
         nb = self.text.split("/")
         self.nb1 = float(nb[0])
-        self.nb2 = float(nb[0])
+        self.nb2 = float(nb[1])
         self.resultat = self.nb1 / self.nb2
         self.entry.set(str(self.resultat))
         self.init()
