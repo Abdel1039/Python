@@ -22,7 +22,7 @@ def user(user_choix):
         Score_u.config(text=score_user)
     else:
         score_ia += 1
-        resultat.config(text="La IA a gange")
+        resultat.config(text="La IA a gagne")
         Score_a.config(text=score_ia)
         
 def ia():
