@@ -1,4 +1,5 @@
 
+from ast import Delete
 import time as t
 from tkinter import *
 from random import randint
@@ -35,6 +36,7 @@ class jeux:
             if self.times <= 0:
                 self.Timer.config(text="Temps termine !")
                 rep.config(text=f'Le resutat est {nombre}')
+                input.delete(0, END)
                     
             else:
                 self.Timer.config(text="%d" % self.times)
@@ -59,7 +61,7 @@ class jeux:
     def start(self):
         global nombre
         nombre = randint(1,1000)
-        jeu.timer(60)
+        jeu.timer(5)
         debut()
             
 
