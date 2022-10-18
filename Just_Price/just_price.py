@@ -61,7 +61,7 @@ class jeux:
     def start(self):
         global nombre
         nombre = randint(1,1000)
-        jeu.timer(5)
+        jeu.timer(60)
         debut()
             
 
