@@ -1,5 +1,4 @@
 
-from ast import Delete
 import time as t
 from tkinter import *
 from random import randint
