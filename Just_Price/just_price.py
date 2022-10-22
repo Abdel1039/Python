@@ -62,6 +62,7 @@ class jeux:
         nombre = randint(1,1000)
         jeu.timer(60)
         debut()
+        rep.config(text="Juste Prix ! (1 - 1000)")
             
 
 jeu = jeux()
