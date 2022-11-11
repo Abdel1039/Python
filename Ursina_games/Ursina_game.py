@@ -18,6 +18,8 @@ def sol():
         position = (0, -4,0)
     )
 
+
+############################# cube game #################################
 def disable():
     destroy(cube)
 
@@ -48,11 +50,6 @@ def ball():
 def couleur():
     sphere.color = color.random_color()
 
-def update():
-    sphere.x += held_keys['left arrow'] * time.dt
-    sphere.x -= held_keys['right arrow'] * time.dt
-    sphere.z += held_keys['up arrow'] * time.dt
-    sphere.z -= held_keys['down arrow'] * time.dt
 
 def cadre():
     P1 = Entity(model= 'cube', scale=(0.5, 11.5, 1.5), color = color.black, position = (-10, -1,0), collider="mesh")
@@ -66,8 +63,6 @@ def cadre():
     P5.rotation_y = 90
     P5.rotation_x = 90
 
-    
-    
 def button():
     global boutton
     
@@ -78,9 +73,10 @@ def button():
         on_click = couleur,
         texture='Texture_Pack/change',
     )
-
 sol()
 ball()
 button()
 cadre()
+############################# cube game #################################
+
 app.run()
